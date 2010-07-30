@@ -15734,3 +15734,226 @@ Processing OrdersController#index (for 127.0.0.1 at 2010-07-30 11:52:27) [GET]
 Rendering template within layouts/store
 Rendering orders/index
 Completed in 77ms (View: 12, DB: 1) | 200 OK [http://localhost/orders]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-30 15:57:06) [GET]
+
+ActionController::RoutingError (No route matches "/who_bought" with {:method=>:get}):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-30 15:57:09) [GET]
+
+ActionController::RoutingError (No route matches "/who_bought/3" with {:method=>:get}):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-30 15:57:13) [GET]
+
+ActionController::RoutingError (No route matches "/who_bought/5" with {:method=>:get}):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 15:57:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.) on line #2 of app/views/info/who_bought.html.haml:
+1: %h3 People Who Bought
+2: 	= @product.title
+3: %ul
+4: 	- for order in @orders
+5: 		%li 
+
+    app/views/info/who_bought.html.haml:2
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/info_controller.rb:5:in `who_bought'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 15:59:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 3)) [0m
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/info/who_bought/3]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 15:59:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 3)) [0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/info/who_bought/3]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 15:59:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 3)) [0m
+Completed in 77ms (View: 14, DB: 1) | 200 OK [http://localhost/info/who_bought/3]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 15:59:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.) on line #2 of app/views/info/who_bought.html.haml:
+1: %h3 People Who Bought 
+2: 	= @product.title
+3: %ul
+4: 	- for order in @orders
+5: 		%li 
+
+    app/views/info/who_bought.html.haml:2
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/info_controller.rb:5:in `who_bought'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (103.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 16:00:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 3)) [0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/info/who_bought/3]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 16:00:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/info/who_bought/4]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 16:04:57) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (0.8ms)
+Completed in 353ms (View: 344, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 16:11:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 3)) [0m
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/info/who_bought/3]
+
+
+Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-07-30 16:14:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/info/who_bought/4.xml]
+
+
+Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-07-30 16:15:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 103ms (View: 0, DB: 0) | 200 OK [http://localhost/info/who_bought/4.xml]
+
+
+Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-07-30 16:15:54) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/info/who_bought/4.xml]
