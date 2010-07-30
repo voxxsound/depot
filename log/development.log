@@ -15957,3 +15957,1671 @@ Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-07-30 16:15:5
   [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
   [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
 Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/info/who_bought/4.xml]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:01:13) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::LANGUAGES) on line #9 of app/views/layouts/store.html.haml:
+6: 	%body#store
+7: 		#banner
+8: 			- form_tag '', :method => 'GET', :class => 'locale' do
+9: 				= select_tag 'locale', options_for_select(LANGUAGES, I18n.locale), :onchange => 'this.form.submit()'
+10: 				= submit_tag 'submit'
+11: 				= javascript_tag "$$('.locale input').each(Element.hide)"
+12: 			= image_tag("logo.png")
+
+    app/views/layouts/store.html.haml:9
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:199:in `call'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:199
+    haml (3.0.13) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.13) lib/haml/helpers.rb:588
+    haml (3.0.13) lib/haml/helpers.rb:343:in `call'
+    haml (3.0.13) lib/haml/helpers.rb:343:in `capture_haml'
+    haml (3.0.13) lib/haml/helpers.rb:566:in `with_haml_buffer'
+    haml (3.0.13) lib/haml/helpers.rb:339:in `capture_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:88:in `capture'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:205:in `form_tag'
+    app/views/layouts/store.html.haml:8:in `_run_haml_app47views47layouts47store46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:01:50) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::LANGUAGES) on line #9 of app/views/layouts/store.html.haml:
+6: 	%body#store
+7: 		#banner
+8: 			- form_tag '', :method => 'GET', :class => 'locale' do
+9: 				= select_tag 'locale', options_for_select(LANGUAGES, I18n.locale), :onchange => 'this.form.submit()'
+10: 				= submit_tag 'submit'
+11: 				= javascript_tag "$$('.locale input').each(Element.hide)"
+12: 			= image_tag("logo.png")
+
+    app/views/layouts/store.html.haml:9
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:199:in `call'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:199
+    haml (3.0.13) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.13) lib/haml/helpers.rb:588
+    haml (3.0.13) lib/haml/helpers.rb:343:in `call'
+    haml (3.0.13) lib/haml/helpers.rb:343:in `capture_haml'
+    haml (3.0.13) lib/haml/helpers.rb:566:in `with_haml_buffer'
+    haml (3.0.13) lib/haml/helpers.rb:339:in `capture_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:88:in `capture'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:205:in `form_tag'
+    app/views/layouts/store.html.haml:8:in `_run_haml_app47views47layouts47store46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (101.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:02:13) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.6ms)
+Completed in 70ms (View: 28, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:02:28) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (0.7ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/store?locale=en]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:03:04) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (0.8ms)
+Completed in 70ms (View: 63, DB: 1) | 200 OK [http://localhost/store?locale=en]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:03:59) [GET]
+  Parameters: {"locale"=>"en"}
+
+NoMethodError (undefined method `set_locale' for #<StoreController:0x103511068>):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Fri Jul 30 17:11:36 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:11:37 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:11:46 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:08 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:09 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:09 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:09 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:10 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:15 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:20 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-07-30 17:13:26) [GET]
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 392ms (View: 14, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+/!\ FAILSAFE /!\  Fri Jul 30 17:13:34 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:13:41) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+
+NoMethodError (undefined method `set_locale' for #<ProductsController:0x10360fa50>):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:15:04) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+
+NoMethodError (undefined method `set_locale' for #<ProductsController:0x103256198>):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:15:04) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+
+NoMethodError (undefined method `set_locale' for #<ProductsController:0x1034e8bb8>):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:15:05) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+
+NoMethodError (undefined method `set_locale' for #<ProductsController:0x103174e78>):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Fri Jul 30 17:17:50 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting ')'
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+/Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:41: syntax error, unexpected $end, expecting kEND
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:18:01) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 33ms (View: 20, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:18:06) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/products?locale=en]
+/!\ FAILSAFE /!\  Fri Jul 30 17:19:13 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:19:35 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:19:36 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:19:36 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:19:37 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:19:37 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDELETE FROM sessions[0m
+/!\ FAILSAFE /!\  Fri Jul 30 17:20:00 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:20:01 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Fri Jul 30 17:20:06 -0400 2010
+  Status: 500 Internal Server Error
+  /Users/voxxsound/work/training/pragPro/depot/app/controllers/application_controller.rb:29: syntax error, unexpected tSTRING_BEG, expecting kEND
+    flash.now[:notice] "#{I18n.locale} translation not available."
+                        ^
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/abstract_store.rb:128:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/voxxsound/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:20:26) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-07-30 17:20:26) [GET]
+undefined method `default_loacle' for I18n:Module
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-07-30 17:20:36) [POST]
+  Parameters: {"name"=>"Aaron", "commit"=>"Login", "authenticity_token"=>"OLnmv1rVioqbHVXYx1224gY+7LZzFm0j/J2xOtFqbrw=", "password"=>"dvous1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'Aaron') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-07-30 17:20:36) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-07-30 17:20:42) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/admin?locale=en]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:20:47) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.7ms)
+Completed in 79ms (View: 72, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:20:50) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (0.7ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/store?locale=en]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:26:48) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (0.8ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/store?locale=en]
+
+
+Processing InfoController#index (for 127.0.0.1 at 2010-07-30 17:26:49) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: who_bought):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 17:27:00) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/info_controller.rb:3:in `who_bought'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-30 17:28:26) [GET]
+
+ActionController::RoutingError (No route matches "/info/who_bought.html.haml" with {:method=>:get}):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/voxxsound/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 17:28:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 88ms (View: 76, DB: 1) | 200 OK [http://localhost/info/who_bought/4]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 17:28:58) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/info/who_bought/4]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 17:28:59) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/info/who_bought/4]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-07-30 17:29:00) [GET]
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (0.7ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-07-30 17:29:01) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 4)) [0m
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/info/who_bought/4]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-30 17:29:03) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/orders]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-30 17:29:03) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-07-30 17:29:05) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/users]
