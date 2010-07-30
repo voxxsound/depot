@@ -1,0 +1,37 @@
+%html
+	%head
+		%title PragProg Books Online Store
+		= stylesheet_link_tag "depot", :media => "all"
+		= javascript_include_tag :defaults
+	%body#store
+		#banner
+			= image_tag("logo.png")
+			= @page_title || "Pragmatic Bookshelf"
+		#columns
+			#side
+				- if @cart
+					#cart 
+						- hidden_div_if(@cart.items.empty?, :id => "cart") do
+							= render(:partial => "cart", :object => @cart)
+				%a{:href => "http://localhost:3000/store"} Home
+				%br
+				%a{:href => "http://www...."} Questions
+				%br
+				%a{:href => "http://www...."} News
+				%br
+				%a{:href => "http://www...."} Contact
+				<br />
+				- if session[:user_id]
+					<br />
+					= link_to 'Orders', :controller => 'orders'
+					<br />
+					= link_to 'Products', :controller => 'products'
+					<br />
+					= link_to 'Users', :controller => 'users'
+					<br /><br />
+					= link_to 'Logout', :controller => 'admin', :action => 'logout'
+			#main
+				- if flash[:notice]
+					#notice
+						= flash[:notice]
+				= yield :layout
