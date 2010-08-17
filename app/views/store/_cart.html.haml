@@ -1,4 +1,5 @@
-%h2 Shopping Cart
+%h2 
+	= I18n.t 'layout.cart.title'
 .cart-title
 	%table
 		= render(:partial => "cart_item", :collection => cart.items)
@@ -7,5 +8,5 @@
 			%td.total-cell
 				= number_to_currency(cart.total_price)
 			
-	= button_to 'Checkout', :action => 'checkout'
-	= button_to 'Empty Cart', :action => :empty_cart
+	= button_to I18n.t('layout.cart.button.checkout'), :action => 'checkout'
+	= button_to I18n.t('layout.cart.button.empty'), :action => :empty_cart

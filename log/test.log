@@ -1,0 +1,1079 @@
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Agile web development with rails') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My book title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+
+
+Processing LineItemsController#create (for 0.0.0.0 at 2010-08-13 11:39:12) [POST]
+  Parameters: {"line_item"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#destroy (for 0.0.0.0 at 2010-08-13 11:39:12) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#edit (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962/edit]
+
+
+Processing LineItemsController#index (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items]
+
+
+Processing LineItemsController#new (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/new]
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#show (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962]
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#update (for 0.0.0.0 at 2010-08-13 11:39:12) [PUT]
+  Parameters: {"id"=>"980190962", "line_item"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+
+
+Processing OrdersController#create (for 0.0.0.0 at 2010-08-13 11:39:12) [POST]
+  Parameters: {"order"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;36;1mOrder Load (0.1ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#destroy (for 0.0.0.0 at 2010-08-13 11:39:12) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#edit (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962/edit]
+
+
+Processing OrdersController#index (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders]
+
+
+Processing OrdersController#new (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/new]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#show (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#update (for 0.0.0.0 at 2010-08-13 11:39:12) [PUT]
+  Parameters: {"id"=>"980190962", "order"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2010-08-13 11:39:12) [POST]
+  Parameters: {"product"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products]
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-08-13 11:39:12) [POST]
+  Parameters: {"user"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-08-13 11:39:12) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-08-13 11:39:12) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-08-13 11:39:12) [PUT]
+  Parameters: {"id"=>"980190962", "user"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962?]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+
+
+Processing LineItemsController#create (for 0.0.0.0 at 2010-08-13 11:41:30) [POST]
+  Parameters: {"line_item"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#destroy (for 0.0.0.0 at 2010-08-13 11:41:30) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#edit (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962/edit]
+
+
+Processing LineItemsController#index (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items]
+
+
+Processing LineItemsController#new (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/new]
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#show (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962]
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#update (for 0.0.0.0 at 2010-08-13 11:41:30) [PUT]
+  Parameters: {"id"=>"980190962", "line_item"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+
+
+Processing OrdersController#create (for 0.0.0.0 at 2010-08-13 11:41:30) [POST]
+  Parameters: {"order"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;36;1mOrder Load (0.1ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#destroy (for 0.0.0.0 at 2010-08-13 11:41:30) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#edit (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962/edit]
+
+
+Processing OrdersController#index (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders]
+
+
+Processing OrdersController#new (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/new]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#show (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962]
+  [4;35;1mOrder Load (0.1ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#update (for 0.0.0.0 at 2010-08-13 11:41:30) [PUT]
+  Parameters: {"id"=>"980190962", "order"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2010-08-13 11:41:30) [POST]
+  Parameters: {"product"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products]
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-08-13 11:41:30) [POST]
+  Parameters: {"user"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-08-13 11:41:30) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-08-13 11:41:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-08-13 11:41:30) [PUT]
+  Parameters: {"id"=>"980190962", "user"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962?]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+
+
+Processing LineItemsController#create (for 0.0.0.0 at 2010-08-13 11:56:09) [POST]
+  Parameters: {"line_item"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#destroy (for 0.0.0.0 at 2010-08-13 11:56:09) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#edit (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962/edit]
+
+
+Processing LineItemsController#index (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items]
+
+
+Processing LineItemsController#new (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/new]
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#show (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962]
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items"."id" = 980190962) [0m
+
+
+Processing LineItemsController#update (for 0.0.0.0 at 2010-08-13 11:56:09) [PUT]
+  Parameters: {"id"=>"980190962", "line_item"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/line_items/980190962?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+
+
+Processing OrdersController#create (for 0.0.0.0 at 2010-08-13 11:56:09) [POST]
+  Parameters: {"order"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;36;1mOrder Load (0.1ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#destroy (for 0.0.0.0 at 2010-08-13 11:56:09) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#edit (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962/edit]
+
+
+Processing OrdersController#index (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders]
+
+
+Processing OrdersController#new (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/new]
+  [4;35;1mOrder Load (0.1ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#show (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962]
+  [4;35;1mOrder Load (0.1ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 980190962) [0m
+
+
+Processing OrdersController#update (for 0.0.0.0 at 2010-08-13 11:56:09) [PUT]
+  Parameters: {"id"=>"980190962", "order"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/orders/980190962?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2010-08-13 11:56:09) [POST]
+  Parameters: {"product"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products]
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/products/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-08-13 11:56:09) [POST]
+  Parameters: {"user"=>{}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-08-13 11:56:09) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-08-13 11:56:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190962) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-08-13 11:56:09) [PUT]
+  Parameters: {"id"=>"980190962", "user"=>{}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/980190962?]

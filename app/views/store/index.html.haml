@@ -1,4 +1,5 @@
-%h1 Your Pragmatic Catalog
+%h1 
+	= I18n.t 'layout.main.title'
 
 - @products.each do |product|
 	.entry
@@ -10,4 +11,4 @@
 		%span.price
 			= number_to_currency(product.price)
 			- form_remote_tag :url => {:action => 'add_to_cart', :id => product } do
-				= submit_tag "Add to Cart"
+				= submit_tag I18n.t('layout.main.button.add')

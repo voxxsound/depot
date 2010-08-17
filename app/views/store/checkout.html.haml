@@ -3,21 +3,22 @@
 	
 	- form_for :order, :url => { :action => :save_order } do |form|
 		%fieldset
-			%legend Please Enter Your Details
+			%legend
+				= I18n.t 'layout.checkout.legend'
 			%div
-				= form.label :name, "Name"
+				= form.label :name, I18n.t('layout.checkout.name')
 				= form.text_field :name, :size => 40
 				
 			%div
-				= form.label :address, "Address:"
+				= form.label :address, I18n.t('layout.checkout.address')
 				= form.text_area :address, :rows => 3, :cols => 40
 				
 			%div
-				= form.label :email, "E-mail:"
+				= form.label :email, I18n.t('layout.checkout.email')
 				= form.text_field :email, :size => 40
 			
 			%div
-				= form.label :pay_type, "Pay With:"
-				= form.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method"
+				= form.label :pay_type, I18n.t('layout.checkout.pay_type')
+				= form.select :pay_type, Order::PAYMENT_TYPES, :prompt => I18n.t('layout.checkout.pay_prompt')
 				
-			= submit_tag "Place Order", :class => "submit"
+			= submit_tag I18n.t('layout.checkout.submit'), :class => "submit"
